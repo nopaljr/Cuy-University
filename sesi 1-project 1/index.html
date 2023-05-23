@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek 1</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div class="wrapper-navbar">
+        <div class="brand">
+            <div class="firstname">nakama</div>
+            <div class="lastname">code</div>
+            <img src="mugiwara.png" alt="" class="logo"/>
+        </div>
+        <div class="opening">welcome to nakama squad</div>
+        <ul class="about">
+            <li><a href="/">join</a></li>
+            <li><a href="/">schedule</a></li>
+            <li><a href="/">member</a></li>
+        </ul>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- CONTENT 1 START -->
+    <div class="content">
+        <div class="teks-content">
+            <div class="title">program code & program printed odd and even numbers used loop do while</div>
+        </div>
+        <div class="wrapper-cpp">
+            <div class="card-content">
+                <span class="ml-5">#include</span>
+                <span>< iostream ></span> 
+                <span class="pln  ml-5">using namespace std;</span> 
+                <span class="pln  ml-5">main(){</span> 
+                <br>
+                <span class="pln ml-5">int ganjil = 1, genap = 1, angka [2], total[2];</span>    
+                <span class="pln ml-5">angka [0] = 0;	total[0] = 0;</span>    
+                <span class="pln ml-5">angka [1] = 0;	total[1] = 0;</span>  
+                <br>
+                <span class="pln ml-10">	cout << "\nProgram C++ untuk mencari angka ganjil dan genap menggunakan do while";</span>
+                <br>
+                <span class="pln ml-10">cout << "\n\n Bilangan ganjil =";</span>
+                <br>
+                <span class="pln ml-5">do{</span>
+                <br>
+                <span class="pln ml-10">if (ganjil % 2 != 0){</span>
+                <span class="pln ml-10">cout << ganjil << " ";</span>
+                <span class="pln ml-10">angka[0]++;</span>
+                <span class="pln ml-10">total[0]= total[0] + ganjil;</span>
+                <span class="pln ml-10">}ganjil++;</span>
+                <br>
+                <span class="pln">}while (ganjil <= 30);</span>
+                <br>
+                <span class="pln ml-10">cout << "\n jumlah digit ganjil =" << angka[0];</span>
+                <span class="pln ml-10">cout << "\n total bilangan ganjil =" << total[0];</span>
+                <br>
+                <span class="pln ml-5"> do{</span>
+                <span class="pln ml-10">if (genap % 2 == 0){</span>
+                <span class="pln ml-10">cout << genap << " ";</span>
+                <span class="pln ml-10"> total[1] = total[1] + genap;</span>
+                <span class="pln ml-5">}genap++;</span>
+                <br>
+                <span class="pln">}while (genap <= 20);</span>
+                <br>
+                <span class="pln ml-10">cout << "\n jumlah digit genap =" << angka[1];</span>
+                <span class="pln ml-10">cout << "\n total bilangan genap =" << total[1];</span>
+                <br>
+                <span class="pln ml-5">return 0;</span>
+                <span class="pln">}</span>   
+            </div>
+            <div class="card-run">
+                <img src="aset/ganjil-genap do while.png" alt="program cpp ganjil genap do while" class="run-do-while">  
+            </div>
+        </div>
+     </div>
+     <!-- CONTENT 1 END -->
+
+     <!-- CONTENT 2 START -->
+     <div class="content">
+        <div class="teks-content">
+            <div class="title">program code & program printed make triangel used loop for</div>
+        </div>
+        <div class="wrapper-cpp">
+            <div class="card-content">
+                <span class="ml-5">#include</span>
+                <span>< iostream ></span> 
+                <span class="pln  ml-5">using namespace std;</span> 
+                <span class="pln  ml-5">main(){</span> 
+                <br>
+                <span class="pln ml-5">int a;</span>    
+                <span class="pln ml-5">cout <<"masukan panjang pola = ";</span>    
+                <span class="pln ml-5">cin >> a;</span>  
+                <span class="pln ml-5">cout << "\n";</span>  
+                <br>
+                <span class="pln ml-5">for( int i = 1; i <= a; i++){</span>
+                <br>
+                <span class="pln ml-10">for(int j = 1; j<=i; j++){</span>
+                <br>
+                <span class="pln ml-10">cout << "x";</span>
+                <br>
+                <span class="pln ml-10">}cout << endl;</span>
+                <span class="pln ml-5">}</span>
+                <span class="pln ml-10">return 0;</span>
+                <span class="pln">}</span>
+            </div>
+            <div class="card-run">
+                <img src="aset/triangle-for.png" alt="program cpp triangel used loop for" class="run-triangle">  
+            </div>
+        </div>  
+    </div>
+    <!-- CONTENT 2 END -->
+
+    <!-- CONTENT 3 START -->
+    <div class="content">
+        <div class="teks-content">
+            <div class="title">program code & program printed to find the volume and surface area of ​​a sphere</div>
+        </div>
+        <div class="wrapper-cpp">
+            <div class="card-content">
+                <span class="ml-5">#include</span>
+                <span>< iostream ></span> 
+                <span class="pln  ml-5">using namespace std;</span> 
+                <span class="pln  ml-5">int main(){</span> 
+                <br>
+                <span class="pln ml-5">string ulang;</span>    
+                <span class="pln ml-5">int kode;</span>    
+                <span class="pln ml-5">float jari, phi = 3.14, volume, luas;</span>  
+                <span class="pln ml-5">ulang:</span>  
+                <span class="pln ml-10">cout << "\n Program untuk menghitung volume dan luas permukaan bola";</span>
+                <br>
+                <span class="pln ml-10">cout << "\n 1.Program menghitung volume bola \n 2.Program menghitung luas permukaan bola";</span>
+                <br>
+                <span class="pln ml-10">cout << "\n pilihlah program apa yang ingin anda gunakan = ";</span>
+                <span class="pln ml-10">cin >> kode;</span>
+                <span class="pln ml-10">system("cls");</span>
+                <br>
+                <span class="pln ml-10">switch(kode){</span>
+                <span class="pln ml-10">case 1:</span>
+                <span class="pln ml-10">cout << "\n Program untuk menghitung volume bola";</span>
+                <br>
+                <span class="pln ml-10">cout << "\n\n Masukan jari jari = "; cin >> jari;</span>
+                <span class="pln ml-10">volume = (4 * phi * jari * jari * jari)/3;</span>
+                <span class="pln ml-10">cout << "\n Volumenya =" << volume;</span>
+                <span class="pln ml-10">break;</span>
+                <br>
+                <span class="pln ml-10">case 2:</span>
+                <span class="pln ml-10">cout << "\n Program untuk menghitung luas permukaan bola";</span>
+                <br>
+                <span class="pln ml-10">cout << "\n\n Masukan jari jari = "; cin >> jari;</span>
+                <span class="pln ml-10">luas = 4 * phi * jari * jari;</span>
+                <span class="pln ml-10">cout << "\n Luas permukaannya =" << luas; </span>
+                <span class="pln ml-10">break;</span>
+                <br>
+                <span class="pln ml-10">default: </span>
+                <span class="pln ml-10">cout << " Maaf kode yang anda masukan tidak ada";</span>
+                <span class="pln">}</span>
+                <br>
+                <span class="pln ml-10">cout << "\n\n Apakah anda ingin mengulang program ? (Y/T)"; cin >> ulang;</span>
+                <span class="pln ml-10">system ("cls");</span>
+                <br>
+                <span class="pln ml-10">if (ulang == "y" || ulang == "Y"){</span>
+                <span class="pln ml-10">goto ulang;</span>
+                <span class="pln">}</span>
+                <br>
+                <span class="pln ml-10">if (ulang == "t" || ulang == "T"){</span>
+                <span class="pln ml-10">cout << " Terimakasih sudah menggunakan program ini";</span>
+                <span class="pln">}</span>
+                <span class="pln ml-10">return 0;</span>
+                <span class="pln">}</span>
+            </div>
+            <div class="card-run">
+                <img src="aset/triangle-for.png" alt="program cpp triangel used loop for" class="run-triangle">  
+            </div>
+        </div>  
+    </div>
+    <!-- CONTENT 3 END -->
+</body>
+</html>
