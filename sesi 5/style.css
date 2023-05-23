@@ -1,0 +1,103 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+.main {
+    background-image: url(bg-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    
+   
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    min-width: 325px;
+    color: #FFF5E4;
+    margin-top: 65%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+button {
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #6f61a0;
+    color: #fff;
+    margin-top: 8px;
+    margin-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(149, 59, 43);
+    transition: 0.3s ease-in-out;
+}
+
+input {
+    border: none;
+    font-size: 1.2em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;   
+    background-color: #eaeaea;
+    color: #222;
+    padding: 10px;
+    margin-top: 8px;
+    width: 200%;
+}
+
+#pertanyaan {
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+#loader {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 8px solid tomato;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    animation: 2.5s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends</title>
+</head>
+<style>
+    *,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #trailer {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .wrapper {
+        bottom: 45px;
+        position: fixed;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: #ffff;
+    }
+
+    .wrapper img {
+        height: 80px;
+        width: 80px;
+    }
+    #btn {
+        font-size: 15px;
+        margin-top: 10px;
+        width: 150px;
+        height: auto;
+        padding: 5px;
+        background-color: black;
+        color: #ffff;
+        cursor: pointer;
+        border: none;
+    }
+    #btn:hover {
+        font-size: 18px;
+        background-color: #a9a9a9;
+        color: #000;
+        transition: 0.3s ease-in;
+        width: 200px;
+        height: auto;
+    }
+    .footer {
+        margin-left: 10px;
+        position: fixed;
+        font-size: 8px;
+        bottom: 0;
+        color: #ffff;
+    }
+    @media (min-aspect-ratio: 16/9){
+        #trailer{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-aspect-ratio: 16/9){
+    #trailer{
+        width: auto;
+        height: 100%;
+    }
+}
+</style>
+
+<body>
+    <div class="content">
+        <video src="./aset/Apex-Legends.mp4" id="trailer" type="video/mp4" muted loop autoplay></video>
+        <div class="wrapper">
+            <img src="./aset/Logo-ApexLegends.png" alt="Apex-Legends">
+            <h1>Apex Legends</h1>
+            <button id="btn" onclick="triggerBtn()">Pause</button>
+        </div>
+        <div class="footer">
+            <h1>Made by Naufal Ramadhan &copy;</h1>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn")
+        const trailer = document.getElementById("trailer")
+
+        function triggerBtn(){
+            if (trailer.paused){
+                trailer.play()
+                btn.innerHTML = "Pause"
+            }else {
+                trailer.pause()
+                btn.innerHTML = "Play"
+            }
+        }
+    </script>
+</body>
+
+</html>
